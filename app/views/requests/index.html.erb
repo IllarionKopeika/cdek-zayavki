@@ -1,0 +1,46 @@
+<h1 class="text-center">Заявки на выкуп</h1>
+
+<div>
+  <table class="table table-striped table-bordered border-dark-subtle table-hover align-middle table-responsive">
+    <thead class="table-secondary">
+      <tr>
+        <th scope="col" class="align-middle text-truncate">№</th>
+        <th scope="col" class="align-middle text-truncate">Тип заявителя</th>
+        <th scope="col" class="align-middle text-truncate">Название компании</th>
+        <th scope="col" class="align-middle text-truncate">Тип заявки</th>
+        <th scope="col" class="align-middle text-truncate">Декларирование</th>
+        <th scope="col" class="align-middle text-truncate">Способ оплаты</th>
+        <th scope="col" class="align-middle text-truncate">Другой способ оплаты</th>
+        <th scope="col" class="align-middle text-truncate">Сумма перевода</th>
+        <th scope="col" class="align-middle text-truncate">Категория товаров</th>
+        <th scope="col" class="align-middle text-truncate">Кол-во товара</th>
+        <th scope="col" class="align-middle text-truncate">Ссылка</th>
+        <th scope="col" class="align-middle text-truncate">Контактное лицо</th>
+        <th scope="col" class="align-middle text-truncate">Телефон</th>
+        <th scope="col" class="align-middle text-truncate">Имейл</th>
+        <th scope="col" class="align-middle text-truncate">Комментарии</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <% @requests.each do |request| %>
+        <tr>
+          <td class="text-truncate"><%= request.id %></td>
+          <td class="text-truncate"><%= request.customer_type %></td>
+          <td class="text-truncate"><%= request.company_name %></td>
+          <td class="text-truncate"><%= request.request_type %></td>
+          <td class="text-truncate"><%= request.declaration %></td>
+          <td class="text-truncate"><%= request.payment_method %></td>
+          <td class="text-truncate"><%= request.own_payment_method %></td>
+          <td class="text-truncate"><%= request.transfer_amount %></td>
+          <td class="text-truncate"><%= request.goods_category %></td>
+          <td class="text-truncate"><%= request.goods_amount %></td>
+          <td class="text-truncate"><%= request.link %></td>
+          <td class="text-truncate"><%= request.contact_name %></td>
+          <td class="text-truncate"><%= request.contact_phone %></td>
+          <td class="text-truncate"><%= request.contact_email %></td>
+          <td class="text-truncate"><%= request.comment %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

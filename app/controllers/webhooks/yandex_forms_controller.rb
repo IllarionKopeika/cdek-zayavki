@@ -11,6 +11,7 @@ module Webhooks
         company_name:         yandex_params[:company_name],
         request_type:         yandex_params[:request_type],
         declaration:          yandex_params[:declaration],
+        payment_method:       yandex_params[:payment_method],
         own_payment_method:   yandex_params[:own_payment_method],
         transfer_amount:      yandex_params[:transfer_amount],
         goods_category:       yandex_params[:goods_category],
