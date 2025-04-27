@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_type: MyString
+  company_name: MyString
+  request_type: MyString
+  declaration: MyString
+  own_payment_method: MyText
+  transfer_amount: MyString
+  goods_category: MyText
+  goods_amount: MyString
+  link: MyText
+  contact_name: MyString
+  contact_phone: MyString
+  contact_email: MyString
+  cdek_contract: MyString
+  cdek_manager_name: MyString
+  cdek_manager_contact: MyString
+  comment: MyText
+
+two:
+  customer_type: MyString
+  company_name: MyString
+  request_type: MyString
+  declaration: MyString
+  own_payment_method: MyText
+  transfer_amount: MyString
+  goods_category: MyText
+  goods_amount: MyString
+  link: MyText
+  contact_name: MyString
+  contact_phone: MyString
+  contact_email: MyString
+  cdek_contract: MyString
+  cdek_manager_name: MyString
+  cdek_manager_contact: MyString
+  comment: MyText
